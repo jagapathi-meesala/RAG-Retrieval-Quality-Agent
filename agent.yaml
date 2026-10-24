@@ -1,0 +1,14 @@
+schema_version: "0.1.0"
+name: "RAG Retrieval Quality Agent"
+description: "Evaluates retrieval results against labeled relevance judgments and reports ranking, coverage, and evidence-quality issues."
+version: "1.0.0"
+license: "MIT"
+author: "jagapathi-meesala"
+tools:
+  - retrieval_evaluation
+  - chunk_coverage_audit
+  - ranking_diagnostics
+skills:
+  - retrieval-evaluation
+  - chunk-coverage-audit
+  - ranking-diagnostics

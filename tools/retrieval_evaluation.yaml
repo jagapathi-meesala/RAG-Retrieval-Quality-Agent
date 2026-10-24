@@ -1,0 +1,18 @@
+name: retrieval_evaluation
+description: Compute retrieval ranking metrics from supplied query results and relevance judgments.
+input_schema:
+  type: object
+  additionalProperties: false
+  required:
+    - queries
+  properties:
+    queries:
+      type: array
+      items:
+        type: object
+output_schema:
+  type: object
+  required:
+    - status
+    - aggregate_metrics
+    - per_query

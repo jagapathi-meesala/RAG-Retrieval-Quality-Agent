@@ -1,0 +1,42 @@
+{
+  "queries": [
+    {
+      "query_id": "q-001",
+      "retrieved": [
+        "chunk-A",
+        "chunk-C",
+        "chunk-B"
+      ],
+      "relevance": {
+        "chunk-A": 3,
+        "chunk-B": 2,
+        "chunk-D": 1
+      },
+      "expected_evidence_ids": [
+        "chunk-A",
+        "chunk-B"
+      ]
+    },
+    {
+      "query_id": "q-002",
+      "retrieved": [
+        "chunk-X",
+        "chunk-Y",
+        "chunk-Z"
+      ],
+      "relevance": {
+        "chunk-Y": 2,
+        "chunk-Z": 1
+      }
+    },
+    {
+      "query_id": "q-003",
+      "retrieved": [
+        "chunk-M",
+        "chunk-M",
+        "chunk-N"
+      ],
+      "relevance": {}
+    }
+  ]
+}

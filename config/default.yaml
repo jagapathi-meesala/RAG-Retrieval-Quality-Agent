@@ -1,0 +1,4 @@
+default_k: 5
+relevance_threshold: 1
+duplicate_ids: report_and_count_first_occurrence
+unjudged_query_policy: exclude_from_aggregate_and_report

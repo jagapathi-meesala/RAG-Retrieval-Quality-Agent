@@ -1,0 +1,22 @@
+name: ranking_diagnostics
+description: Report duplicate retrieved IDs and relevance-ranking diagnostics.
+input_schema:
+  type: object
+  additionalProperties: false
+  required:
+    - retrieved
+    - relevance
+  properties:
+    retrieved:
+      type: array
+      items:
+        type: string
+    relevance:
+      type: object
+      additionalProperties:
+        type: integer
+        minimum: 0
+output_schema:
+  type: object
+  required:
+    - findings

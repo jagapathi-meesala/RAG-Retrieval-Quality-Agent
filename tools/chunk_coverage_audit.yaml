@@ -1,0 +1,25 @@
+name: chunk_coverage_audit
+description: Check whether expected evidence IDs appear in the first k retrieved results.
+input_schema:
+  type: object
+  additionalProperties: false
+  required:
+    - expected_evidence_ids
+    - retrieved
+  properties:
+    expected_evidence_ids:
+      type: array
+      items:
+        type: string
+    retrieved:
+      type: array
+      items:
+        type: string
+    k:
+      type: integer
+      minimum: 1
+output_schema:
+  type: object
+  required:
+    - coverage
+    - missing_ids
